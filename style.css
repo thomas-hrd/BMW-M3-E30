@@ -1,0 +1,316 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    margin: 0;
+    background-color: #e3e3e3;
+}
+
+/* <!-- ---------------------- L'entête de la page ---------------------- --> */
+header {
+    background-color: rgba(0, 0, 0, 0.226);
+    background-image: url(images/bandes-Motorsport.png);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 6px 20px black;
+}
+
+/* ---------------------- Logo BMW ---------------------- */
+.logo {
+    width: 150px;
+}
+
+/* ---------------------- Menu de navigation ---------------------- */
+nav, a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}
+
+/* ---------------------- Titre---------------------- */
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    margin-top: 50px;
+}
+
+q {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------------- Sous-titre ---------------------- */
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+/* ---------------------- Texte introductif ---------------------- */
+#text1 {
+    width: 750px;
+    height: 125px;
+    margin: 25px;
+    width: auto;
+    text-align: justify;
+}
+
+/* ---------------------- Première photo (vue de face) ---------------------- */
+#photo1 {
+    width: 800px;
+    height: 512px;
+    margin-top: 32px;
+}
+
+/* ---------------------- La div avec la 1ère photo et le tableau ---------------------- */
+#Avant {
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+#Fiche-technique {
+    text-decoration : underline;
+    margin: -15px 0;
+
+}
+
+/* ---------------------- Le tableau ---------------------- */
+#text2 {
+    margin-left: 50px;
+}
+
+td {
+    border: 1px black solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* ---------------------- La div avec la 2ème photo (vue de dos) et le texte 3 ---------------------- */
+#Arrière {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+#text3 {
+    height: 300px;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+#mini-text3 {
+    text-align: justify;
+}
+
+/* ---------------------- La div avec la 3ème photo (l'intérieur) et le texte 4 ---------------------- */
+#Intérieur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    margin: 100px;
+}
+
+#text4 {
+    height: 380px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 18px;
+} 
+
+#mini-text4 {
+    text-align: justify;
+}
+
+/* ---------------------- La div avec la 4ème photo (le moteur) et le texte 5 ---------------------- */
+#Le-moteur {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+#text5 {
+    height: 285px;
+    margin-top: 90px;
+    margin-right: 50px;
+}
+
+#mini-text5{
+    text-align: justify;
+}
+
+/* ---------------------- La class qui regroupe les photo 2, 3 et 4 ---------------------- */
+.photo {
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+    width: 768px;
+
+}
+
+/* ---------------------- Le pied de page ---------------------- */
+footer {
+    background-color: rgba(0, 0, 0, 0.226);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: black;
+    display: flex;
+    align-items: center ;
+    padding: 0px;
+}
+
+footer p {
+    display: flex;
+    align-items: baseline;
+    margin-left: 15px;
+}
+
+/* ---------------------- La class qui regroupe le Contact et Mes réseaux ---------------------- */
+.reseaux {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: -15px;
+}
+
+#lien {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#Contact {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------------------- La partie responsive ---------------------- */
+@media screen and (max-width: 1415px)
+{
+    header nav {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1472px)
+{
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1436px)
+{
+    #Avant {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text2 {
+        margin-top: 50px;
+    }
+
+    #Arrière {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text3 {
+        margin-top: 50px;
+        margin-left: 50px;
+        height: 150px;
+    }
+
+    #Intérieur {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text4 {
+        margin-top: 50px;
+        height: 250px;
+    }
+
+    #Le-moteur {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text5 {
+        margin-top: 50px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1112px)
+{
+    .photo {
+        width: 600px;
+    }
+
+    #photo1 {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1028px)
+{
+    body {
+        font-size: 15px;
+    }
+
+    #text4 {
+        font-size: 15px;
+    }
+
+    #Avant {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 854px)
+{
+    body {
+        font-size: 12px;
+    }
+
+    #text4 {
+        font-size: 12px;
+    }
+
+    #Avant {
+        margin-top: 25px;
+    }
+}
